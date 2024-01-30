@@ -26,12 +26,13 @@ function App() {
   const [selectedId, setSelectedId] = useState(0);
 
   function handleClick(id) {
-    // id === selectedId ? id : null;
-    if (id !== selectedId) {
-      setSelectedId(id);
-    } else {
-      setSelectedId(0);
-    }
+    setSelectedId(id === selectedId ? 0 : id);
+
+    // if (id !== selectedId) {
+    //   setSelectedId(id);
+    // } else {
+    //   setSelectedId(0);
+    // }
   }
   return (
     <div className="App">
