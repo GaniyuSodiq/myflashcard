@@ -23,14 +23,14 @@ const questions = [
 ];
 
 function App() {
-  const [selectedId, setSelectedId] = useState(null);
+  const [selectedId, setSelectedId] = useState(0);
 
   function handleClick(id) {
     // id === selectedId ? id : null;
     if (id !== selectedId) {
       setSelectedId(id);
     } else {
-      setSelectedId(null);
+      setSelectedId(0);
     }
   }
   return (
@@ -46,5 +46,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
